@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Uzbek Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <img src="logo.png" alt="Restaurant Logo" class="logo">
+            <button class="menu-icon" onclick="toggleSidebar()">☰</button>
+        </div>
+    </header>
+
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">✖</button>
+        <a href="index.html">🏠 Home</a>
+        <a href="menu.html">🍽 Menu</a>
+        <a href="cart.html">🛒 Cart</a>
+    </div>
+
+    <section id="products">
+        <h2>Frozen & Semi-Prepared Products</h2>
+        <div class="product-container">
+            <div class="product-item">
+                <img src="frozen-plov.jpg" alt="Frozen Plov">
+                <h3>Frozen Plov</h3>
+                <p>Ready-to-cook traditional Uzbek Plov.</p>
+                <span>30￥</span>
+                <button onclick="addToCart('Frozen Plov', 30)">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="frozen-samsa.jpg" alt="Frozen Samsa">
+                <h3>Frozen Samsa</h3>
+                <p>Delicious ready-to-bake Uzbek Samsa.</p>
+                <span>30￥</span>
+                <button onclick="addToCart('Frozen Samsa', 30)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Uzbek Restaurant. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

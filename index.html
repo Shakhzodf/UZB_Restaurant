@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzbek Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+   <header>
+    <div class="navbar">
+        <img src="logo.png" alt="Restaurant Logo" class="logo">
+        <button class="menu-icon" onclick="toggleSidebar()">☰</button>
+    </div>
+</header>
+
+    <!-- Sidebar Menu -->
+    <div id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">✖</button>
+        <a href="menu.html">Menu</a>
+        <a href="blog.html">Blog</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+    </div>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Latest News & Articles</h2>
+        <article class="blog-post">
+            <h3>Traditional Uzbek Cuisine</h3>
+            <p>Discover the rich flavors of Uzbekistan, featuring dishes like Plov, Samsa, and Lagman...</p>
+            <a href="#">Read more...</a>
+        </article>
+    </section>
+     <section id="hero-video">
+  <video autoplay muted loop playsinline style="width:100%; height:auto; object-fit:cover;">
+    <source src="/images/video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay">
+    <h1>Welcome to Uzbek Restaurant</h1>
+    <p>Experience traditional flavors in a modern setting.</p>
+    <button onclick="window.location.href='menu.html'">View Menu</button>
+  </div>
+</section>
+
+
+    <footer>
+        <p>&copy; 2025 Uzbek Restaurant. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

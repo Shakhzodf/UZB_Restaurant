@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Uzbek Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+    <div class="navbar">
+        <img src="logo.png" alt="Restaurant Logo" class="logo">
+        <button class="menu-icon" onclick="toggleSidebar()">☰</button>
+    </div>
+</header>
+
+    <div id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">✖</button>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+    </div>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="/images/palov.jpg" alt="Plov">
+                <h3>Plov</h3>
+                <p>Traditional Uzbek rice dish with meat and vegetables.</p>
+                <span>30￥</span>
+                <button onclick="addToCart('Plov', 30)">Order Now</button>
+            </div>
+            
+            <div class="menu-item">
+                <img src="/images/palov.jpg" alt="Samsa">
+                <h3>Samsa</h3>
+                <p>Uzbek baked pastry filled with meat and onions.</p>
+                <span>30￥</span>
+                <button onclick="addToCart('Samsa', 30)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="/images/palov.jpg" alt="Kebab">
+                <h3>Kebab</h3>
+                <p>Uzbek baked pastry filled with meat and onions.</p>
+                <span>30￥</span>
+                <button onclick="addToCart('Kebab', 30)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="/images/palov.jpg" alt="Khonim">
+                <h3>Khonim</h3>
+                <p>Uzbek baked pastry filled with meat and onions.</p>
+                <span>￥30</span>
+                <button onclick="addToCart('Khonim', 30)">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Uzbek Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

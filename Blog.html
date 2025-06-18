@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Uzbek Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+    <div class="navbar">
+        <img src="logo.png" alt="Restaurant Logo" class="logo">
+        <button class="menu-icon" onclick="toggleSidebar()">☰</button>
+    </div>
+</header>
+
+   <div id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">✖</button>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+    </div>
+
+    <section id="blog">
+        <h2>Latest News & Articles</h2>
+        <article class="blog-post">
+            <h3>Traditional Uzbek Cuisine</h3>
+            <p>Discover the rich flavors of Uzbekistan, featuring dishes like Plov, Samsa, and Lagman...</p>
+            <a href="#">Read more...</a>
+        </article>
+
+        <article class="blog-post">
+            <h3>Health Benefits of Uzbek Food</h3>
+            <p>Learn how Uzbek food is not only delicious but also packed with essential nutrients...</p>
+            <a href="#">Read more...</a>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Uzbek Restaurant. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
